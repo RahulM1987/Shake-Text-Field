@@ -13,6 +13,8 @@
 		43B6CD491B5A340D00EB91F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CD481B5A340D00EB91F6 /* Images.xcassets */; };
 		43B6CD4C1B5A340D00EB91F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CD4A1B5A340D00EB91F6 /* LaunchScreen.xib */; };
 		43B6CD581B5A340E00EB91F6 /* MyFrameWTeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6CD571B5A340E00EB91F6 /* MyFrameWTeTests.swift */; };
+		43B6CD651B5A364C00EB91F6 /* RRMFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */; };
+		43B6CD661B5A364C00EB91F6 /* RRMFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		43B6CD671B5A364C00EB91F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				43B6CD661B5A364C00EB91F6 /* RRMFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		43B6CD3C1B5A340D00EB91F6 /* MyFrameWTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrameWTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6CD401B5A340D00EB91F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +52,7 @@
 		43B6CD511B5A340E00EB91F6 /* MyFrameWTeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameWTeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6CD561B5A340E00EB91F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B6CD571B5A340E00EB91F6 /* MyFrameWTeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameWTeTests.swift; sourceTree = "<group>"; };
+		43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RRMFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B6CD651B5A364C00EB91F6 /* RRMFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +77,7 @@
 		43B6CD331B5A340D00EB91F6 = {
 			isa = PBXGroup;
 			children = (
+				43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */,
 				43B6CD3E1B5A340D00EB91F6 /* MyFrameWTe */,
 				43B6CD541B5A340E00EB91F6 /* MyFrameWTeTests */,
 				43B6CD3D1B5A340D00EB91F6 /* Products */,
@@ -122,6 +141,7 @@
 				43B6CD381B5A340D00EB91F6 /* Sources */,
 				43B6CD391B5A340D00EB91F6 /* Frameworks */,
 				43B6CD3A1B5A340D00EB91F6 /* Resources */,
+				43B6CD671B5A364C00EB91F6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFrameWTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +374,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFrameWTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

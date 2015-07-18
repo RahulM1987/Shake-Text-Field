@@ -1,0 +1,10 @@
+framework module RRMFramework {
+  umbrella header "RRMFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module RRMFramework.Swift {
+    header "RRMFramework-Swift.h"
+}
