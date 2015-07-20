@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43763F121B5D1E93005EFA25 /* RRMFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43763F111B5D1E93005EFA25 /* RRMFramework.framework */; };
+		43763F141B5D1EF2005EFA25 /* RRMFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43763F111B5D1E93005EFA25 /* RRMFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		43B6CD421B5A340D00EB91F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6CD411B5A340D00EB91F6 /* AppDelegate.swift */; };
 		43B6CD441B5A340D00EB91F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6CD431B5A340D00EB91F6 /* ViewController.swift */; };
 		43B6CD471B5A340D00EB91F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CD451B5A340D00EB91F6 /* Main.storyboard */; };
 		43B6CD491B5A340D00EB91F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CD481B5A340D00EB91F6 /* Images.xcassets */; };
 		43B6CD4C1B5A340D00EB91F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43B6CD4A1B5A340D00EB91F6 /* LaunchScreen.xib */; };
 		43B6CD581B5A340E00EB91F6 /* MyFrameWTeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B6CD571B5A340E00EB91F6 /* MyFrameWTeTests.swift */; };
-		43B6CD651B5A364C00EB91F6 /* RRMFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */; };
-		43B6CD661B5A364C00EB91F6 /* RRMFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				43B6CD661B5A364C00EB91F6 /* RRMFramework.framework in Embed Frameworks */,
+				43763F141B5D1EF2005EFA25 /* RRMFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43763F111B5D1E93005EFA25 /* RRMFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RRMFramework.framework; sourceTree = "<group>"; };
 		43B6CD3C1B5A340D00EB91F6 /* MyFrameWTe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrameWTe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6CD401B5A340D00EB91F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B6CD411B5A340D00EB91F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		43B6CD511B5A340E00EB91F6 /* MyFrameWTeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFrameWTeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B6CD561B5A340E00EB91F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43B6CD571B5A340E00EB91F6 /* MyFrameWTeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFrameWTeTests.swift; sourceTree = "<group>"; };
-		43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RRMFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43B6CD651B5A364C00EB91F6 /* RRMFramework.framework in Frameworks */,
+				43763F121B5D1E93005EFA25 /* RRMFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		43B6CD331B5A340D00EB91F6 = {
 			isa = PBXGroup;
 			children = (
-				43B6CD631B5A35E500EB91F6 /* RRMFramework.framework */,
+				43763F111B5D1E93005EFA25 /* RRMFramework.framework */,
 				43B6CD3E1B5A340D00EB91F6 /* MyFrameWTe */,
 				43B6CD541B5A340E00EB91F6 /* MyFrameWTeTests */,
 				43B6CD3D1B5A340D00EB91F6 /* Products */,
@@ -363,6 +363,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RRMFramework-aoligzwmrzdtcycbnbhunpgjivpy/Build/Products/Debug-iphonesimulator",
 				);
 				INFOPLIST_FILE = MyFrameWTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -377,6 +378,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/RRMFramework-aoligzwmrzdtcycbnbhunpgjivpy/Build/Products/Debug-iphonesimulator",
 				);
 				INFOPLIST_FILE = MyFrameWTe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -437,6 +439,7 @@
 				43B6CD5D1B5A340E00EB91F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		43B6CD5E1B5A340E00EB91F6 /* Build configuration list for PBXNativeTarget "MyFrameWTeTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +448,7 @@
 				43B6CD601B5A340E00EB91F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

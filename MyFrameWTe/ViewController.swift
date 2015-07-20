@@ -10,6 +10,7 @@ import UIKit
 import RRMFramework
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var tesxtFld: UITextField!
     override func viewDidLoad() {
@@ -24,10 +25,10 @@ class ViewController: UIViewController {
 
     @IBAction func shakeV(sender: AnyObject)
     {
-        var Sh : ShakeView = ShakeView(viewS: self.tesxtFld)
-        Sh.ShaketheView()
-        
+        var Sh : ShakeView = ShakeView(TextFieldName:self.tesxtFld, emailID: self.tesxtFld.text)
+        Sh.isValidEmail()
     }
-
+    //make round circles
+    
 }
 

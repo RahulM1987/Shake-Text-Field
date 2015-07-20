@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C634935A-EB6B-4BEB-8AC0-92C404E90710</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>MyFrameWTe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7D483B314AFD0F8ADF4192E54280FE1631FDC316</key>
 		<string>https://github.com/RahulM1987/Shake-Text-Field.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>MyFrameWTe.xcodeproj/project.xcworkspace</string>
+	<string>MyFrameWTe.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7D483B314AFD0F8ADF4192E54280FE1631FDC316</key>

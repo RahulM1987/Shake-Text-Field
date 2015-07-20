@@ -89,11 +89,21 @@ typedef struct _NSZone NSZone;
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UITextField;
+@class NSString;
 
 SWIFT_CLASS("_TtC12RRMFramework9ShakeView")
 @interface ShakeView : NSObject
-- (SWIFT_NULLABILITY(nonnull) instancetype)initWithViewS:(UITextField * __nonnull)viewS OBJC_DESIGNATED_INITIALIZER;
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithTextFieldName:(UITextField * __nonnull)TextFieldName emailID:(NSString * __nullable)emailID OBJC_DESIGNATED_INITIALIZER;
 - (void)ShaketheView;
+- (BOOL)isValidEmail;
+@end
+
+@class NSDictionary;
+
+SWIFT_CLASS("_TtC12RRMFramework14WebServiceCall")
+@interface WebServiceCall : NSObject
+- (SWIFT_NULLABILITY(nonnull) instancetype)initWithUrlReq:(NSString * __nonnull)urlReq OBJC_DESIGNATED_INITIALIZER;
+- (NSDictionary * __nonnull)synchronousRequest;
 @end
 
 #pragma clang diagnostic pop
